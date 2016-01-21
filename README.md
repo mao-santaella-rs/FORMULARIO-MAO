@@ -2,6 +2,6 @@
 
 Formulario a mail
 
-javascript
-php
-bootstrap
+javascript <br>
+php <br>
+bootstrap <br>
