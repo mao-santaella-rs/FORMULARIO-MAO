@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-sm-6 col-sm-offset-3">				
+        <form action="sendmail.php" method="post" class="form-main">					
+          <div class="form-group">
+            <div class="input-cont">
+              <label for="name">Nombre</label>
+              <input id="form_name" type="text" name="form_name" class="form-control">
+            </div>
+            <div class="input-cont">			
+              <label for="mail">Correo electrónico</label>
+              <input id="form_mail" type="text" name="form_mail" class="form-control">
+            </div>
+            <div class="input-cont">			
+              <label for="phone">Teléfono</label>
+              <input id="form_phone" type="text" name="form_phone" class="form-control">
+            </div>
+            <div class="input-cont">
+              <label for="message">Mensaje</label>
+              <textarea id="form_message" name="form_message" rows="8" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="form-feedback"></div>
+          <div class="enviar-cont">
+            <input type="submit" value="ENVIAR" class="btn btn-default">
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+  </body>
+</html>

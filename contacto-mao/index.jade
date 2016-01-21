@@ -1,0 +1,31 @@
+doctype html
+html(lang='es')
+	head
+		meta(charset='utf-8')
+		title CONTACTO
+		link(rel='stylesheet', href='css/bootstrap.css')
+	body
+		.container
+			.col-sm-6.col-sm-offset-3				
+				form.form-main(action="sendmail.php", method="post")					
+					.form-group
+						.input-cont
+							label(for="name") Nombre
+							input#form_name.form-control(type="text", name="form_name")
+						.input-cont			
+							label(for="mail") Correo electrónico
+							input#form_mail.form-control(type="text", name="form_mail")
+						.input-cont			
+							label(for="phone") Teléfono
+							input#form_phone.form-control(type="text", name="form_phone")
+						.input-cont
+							label(for="message") Mensaje
+							textarea#form_message.form-control(name="form_message", rows="8")
+					.form-feedback
+						
+					.enviar-cont
+						input.btn.btn-default(type="submit", value="ENVIAR")
+						
+		script(type='text/javascript', src='js/jquery-2.2.0.min.js')
+		script(type='text/javascript', src='js/contact.js')
+			
